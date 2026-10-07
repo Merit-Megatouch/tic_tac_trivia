@@ -1,0 +1,123 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LinkTrivShowAns | tic_tac_trivia.so
+NetGlob | tic_tac_trivia.so
+WhoWeArePlaying | tic_tac_trivia.so
+AppendLangExt(char (&) [255], LocaleMasks) | tic_tac_trivia.so
+DisplayDefeated(int, int) | tic_tac_trivia.so
+Heartbeat_Check(int, int) | tic_tac_trivia.so
+ScreenIsTouched() | tic_tac_trivia.so
+Heartbeat_WaitForAll(unsigned long, bool) | tic_tac_trivia.so
+GetMyId() | tic_tac_trivia.so
+megaend() | tic_tac_trivia.so
+QueFlush(bool) | tic_tac_trivia.so
+GetMaster() | tic_tac_trivia.so
+megastart(char const*, app_common::args_t*) | tic_tac_trivia.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | tic_tac_trivia.so
+NetGlobals::GetRank(unsigned char) | tic_tac_trivia.so
+NetGlobals::GetScore(int) | tic_tac_trivia.so
+TextSystem::SetTextDescription(TextDesc const&) | tic_tac_trivia.so
+Translator::nTranslate(char*, unsigned int, char const*) | tic_tac_trivia.so
+WorldClass::PlayDeltaAnim(char*, int, int, unsigned long, unsigned long, char*, unsigned short, unsigned char, bool) | tic_tac_trivia.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | tic_tac_trivia.so
+WorldClass::SetBack(char const*, int) | tic_tac_trivia.so
+WorldClass::ShowAll() | tic_tac_trivia.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | tic_tac_trivia.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | tic_tac_trivia.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | tic_tac_trivia.so
+WorldClass::WorldClass() | tic_tac_trivia.so
+SharedTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*)) | tic_tac_trivia.so
+SharedTimer::Stop() | tic_tac_trivia.so
+SharedTimer::Start() | tic_tac_trivia.so
+SharedTimer::GetTick() | tic_tac_trivia.so
+SharedTimer::SharedTimer(Bitmap*, float, float, float, bool, unsigned char, unsigned long, int) | tic_tac_trivia.so
+SystemClass::FlushKB() | tic_tac_trivia.so
+SystemClass::WaitTouch(long) | tic_tac_trivia.so
+TriviaClass::GetQuesData(int, int) | tic_tac_trivia.so
+TriviaClass::GetRandomAns(unsigned char) | tic_tac_trivia.so
+TriviaClass::GetAmountOfQuestionsInCatX(short) | tic_tac_trivia.so
+TriviaClass::ReadData(int) | tic_tac_trivia.so
+TriviaClass::TriviaClass(xml_gamerandom::TrivPICRAND_record*, char*, unsigned char, unsigned char, unsigned char) | tic_tac_trivia.so
+TriviaClass::~TriviaClass() | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::AdjustTime(int, long) | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::copy(abstract_record const*) | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::AddChild(abstract_xml_record*, char const*, unsigned int) | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::NewChild(char*) | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::GameSettingsTriviaRandom_record() | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::~GameSettingsTriviaRandom_record() | tic_tac_trivia.so
+abstract_xml_record::AdjustTimeFields(int, long) | tic_tac_trivia.so
+List::Push(Group*) | tic_tac_trivia.so
+List::Clear(unsigned char) | tic_tac_trivia.so
+List::IsEmpty() | tic_tac_trivia.so
+List::List(List*) | tic_tac_trivia.so
+Group::Signal(Group::SpriteSignalType) | tic_tac_trivia.so
+Group::Signal(SpriteSignal*) | tic_tac_trivia.so
+Group::Message(Group::SpriteSignalType) | tic_tac_trivia.so
+Group::Message(SpriteSignal*) | tic_tac_trivia.so
+Colour::black | tic_tac_trivia.so
+Colour::white | tic_tac_trivia.so
+EventO::DoIt(Sprite*, int) | tic_tac_trivia.so
+EventO::GetType() | tic_tac_trivia.so
+EventO::EventO() | tic_tac_trivia.so
+EventO::~EventO() | tic_tac_trivia.so
+Sprite::ColoredOff(unsigned long) | tic_tac_trivia.so
+Sprite::DoNextFrame() | tic_tac_trivia.so
+Sprite::AssignString(String*, unsigned long) | tic_tac_trivia.so
+Sprite::ChangeString(char const*, unsigned long) | tic_tac_trivia.so
+Sprite::LastEventTime() | tic_tac_trivia.so
+Sprite::DeleteAfterLast(unsigned long) | tic_tac_trivia.so
+Sprite::EnableAllClicks(unsigned long) | tic_tac_trivia.so
+Sprite::DisableAllClicks(unsigned long) | tic_tac_trivia.so
+Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | tic_tac_trivia.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | tic_tac_trivia.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | tic_tac_trivia.so
+Sprite::Reset() | tic_tac_trivia.so
+Sprite::DoDraw() | tic_tac_trivia.so
+Sprite::Enable(unsigned long) | tic_tac_trivia.so
+Sprite::SetBmp(Bitmap*, unsigned long) | tic_tac_trivia.so
+Sprite::Signal(Group::SpriteSignalType) | tic_tac_trivia.so
+Sprite::Signal(SpriteSignal*) | tic_tac_trivia.so
+Sprite::ColorIt(int, int, int, int, int, int, int, int, int, unsigned long) | tic_tac_trivia.so
+Sprite::Disable(unsigned long, bool) | tic_tac_trivia.so
+Sprite::DoChain(List*, int) | tic_tac_trivia.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | tic_tac_trivia.so
+Sprite::Message(Group::SpriteSignalType) | tic_tac_trivia.so
+Sprite::Message(SpriteSignal*) | tic_tac_trivia.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | tic_tac_trivia.so
+Sprite::SetCord(float, float, float, unsigned long) | tic_tac_trivia.so
+Sprite::SetSize(int, int) | tic_tac_trivia.so
+Sprite::AddEvent(EventO*) | tic_tac_trivia.so
+Sprite::SetAlpha(int, unsigned long) | tic_tac_trivia.so
+Sprite::DoCommand(int) | tic_tac_trivia.so
+Sprite::PlaySound(char*, int, unsigned long) | tic_tac_trivia.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | tic_tac_trivia.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | tic_tac_trivia.so
+Settings::Init() | tic_tac_trivia.so
+Settings::Load() | tic_tac_trivia.so
+Settings::Cleanup() | tic_tac_trivia.so
+Settings::Restore(abstract_xml_record const*) | tic_tac_trivia.so
+Settings::Settings(char const*, unsigned int) | tic_tac_trivia.so
+Settings::~Settings() | tic_tac_trivia.so
+TextDesc::SetFontName(char const*) | tic_tac_trivia.so
+NetSprite::SendPacket(unsigned char) | tic_tac_trivia.so
+NetSprite::NetSprite(Bitmap*, unsigned short, unsigned char, unsigned short) | tic_tac_trivia.so
+NetSprite::~NetSprite() | tic_tac_trivia.so
+TextUtils::MeritStringToUTF8(char const*) | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::ChildCount() const | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::GetChildren() const | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::cTag() const | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::eTag() const | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::clone() const | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::equal(abstract_record const*) const | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::Metadata() const | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::ChildName(int) const | tic_tac_trivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::not_equal(abstract_record const*) const | tic_tac_trivia.so
+Settings::Key(unsigned int, bool) const | tic_tac_trivia.so
+typeinfo for EventO | tic_tac_trivia.so
+typeinfo for Settings | tic_tac_trivia.so
+typeinfo for NetSprite | tic_tac_trivia.so
+typeinfo for xml_gamerandom::GameSettingsTriviaRandom_record | tic_tac_trivia.so
+vtable for DOSLinuxWorld | tic_tac_trivia.so
+set_mouse_sprite | tic_tac_trivia.so
