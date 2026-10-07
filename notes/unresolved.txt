@@ -4,12 +4,10 @@
 # symbol | needed by
 LinkTrivShowAns | tic_tac_trivia.so
 AppendLangExt(char (&) [255], LocaleMasks) | tic_tac_trivia.so
-Heartbeat_WaitForAll(unsigned long, bool) | tic_tac_trivia.so
 megaend() | tic_tac_trivia.so
 megastart(char const*, app_common::args_t*) | tic_tac_trivia.so
 NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | tic_tac_trivia.so
 NetGlobals::GetScore(int) | tic_tac_trivia.so
-TextSystem::SetTextDescription(TextDesc const&) | tic_tac_trivia.so
 SharedTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*)) | tic_tac_trivia.so
 SharedTimer::Stop() | tic_tac_trivia.so
 SharedTimer::Start() | tic_tac_trivia.so
@@ -17,6 +15,3 @@ SharedTimer::GetTick() | tic_tac_trivia.so
 SharedTimer::SharedTimer(Bitmap*, float, float, float, bool, unsigned char, unsigned long, int) | tic_tac_trivia.so
 SystemClass::FlushKB() | tic_tac_trivia.so
 SystemClass::WaitTouch(long) | tic_tac_trivia.so
-Colour::black | tic_tac_trivia.so
-Colour::white | tic_tac_trivia.so
-TextDesc::SetFontName(char const*) | tic_tac_trivia.so
