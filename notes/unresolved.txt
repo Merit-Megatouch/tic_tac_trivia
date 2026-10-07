@@ -6,7 +6,6 @@ LinkTrivShowAns | tic_tac_trivia.so
 AppendLangExt(char (&) [255], LocaleMasks) | tic_tac_trivia.so
 megaend() | tic_tac_trivia.so
 megastart(char const*, app_common::args_t*) | tic_tac_trivia.so
-NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | tic_tac_trivia.so
 NetGlobals::GetScore(int) | tic_tac_trivia.so
 SharedTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*)) | tic_tac_trivia.so
 SharedTimer::Stop() | tic_tac_trivia.so
